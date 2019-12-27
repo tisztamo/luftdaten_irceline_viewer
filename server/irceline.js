@@ -10,8 +10,9 @@ class Irceline {
         this.data = []
         this.stations = []
 
-        setInterval(() => this.getData(), 1000 * 60 * 5)
-        this.getStations()
+        console.log("Irceline is disabled.")
+        // setInterval(() => this.getData(), 1000 * 60 * 5)
+        // this.getStations()
     }
     async getStations () {
         try {
