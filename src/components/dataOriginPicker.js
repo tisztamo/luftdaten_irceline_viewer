@@ -29,20 +29,6 @@ class DataOriginPicker extends Component {
           }
           &nbsp;Luftdaten
         </button>
-        <button
-          className={ircelineIsReachable? '' : 'unreachable'}
-          onClick={() => this.props.onChangeDataOrigin({
-          luftdaten: luftdaten_toggle,
-          irceline: !irceline_toggle
-        })}>
-          {
-            (ircelineIsReachable) ? (
-              (ircelineIsUpdating) ? '\u231B' :
-                (irceline_toggle) ? '\u2714' : '\u2715'
-            ) : '\u2205'
-          }
-          &nbsp;Irceline
-        </button>
       </div>
     )
   }
