@@ -49,7 +49,7 @@ class Luftdaten {
         currentData.forEach((station) => {
             let isValid = true
             let isNew = false
-            if (station.location.country !== 'BE') return
+            // if (station.location.country !== 'BE') return
 
             let parsedSensorLocation = sensorLocations.find((existingSensorLocation) => existingSensorLocation.id === station.location.id)
             if (!parsedSensorLocation) {
