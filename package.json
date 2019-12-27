@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "start": "react-scripts build && node server.js",
+    "start": "react-scripts build && node server/server.js",
     "dev": "react-scripts start"
   },
   "eslintConfig": {
